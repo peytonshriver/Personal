@@ -28,7 +28,7 @@ private static final long serialVersionUID = 1L;
 		} else 
 		{
 			//response.getWriter().append("Served at: ").append(request.getContextPath());	
-			response.sendRedirect("/index.html");	}
+			response.sendRedirect("helloworld/index.html");	}
 	}
 
 	/**
