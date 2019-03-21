@@ -23,12 +23,12 @@ private static final long serialVersionUID = 1L;
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		if(request.getRequestURI().substring(request.getContextPath().length()).startsWith("/index.html")) {
+		if(request.getRequestURI().substring(request.getContextPath().length()).startsWith("index.html")) {
 			super.doGet(request, response);
 		} else 
 		{
 			//response.getWriter().append("Served at: ").append(request.getContextPath());	
-			response.sendRedirect("helloworld/index.html");	}
+			response.sendRedirect("index.html");	}
 	}
 
 	/**
