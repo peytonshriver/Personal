@@ -10,6 +10,7 @@ before_script:
     - npm install -g @angular/cli
 
 script:
+    - cd angular-travis
     - ng build --prod
     - npm install sonar-scanner
     - sonar-scanner -Dsonar.projectKey=peytonshriver_Personal -Dsonar.organization=peytonshriver-github -Dsonar.sources=angular-travis/src -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
